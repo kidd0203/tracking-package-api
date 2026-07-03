@@ -4,8 +4,8 @@ namespace TrackingPackageSample
 {
     internal class Program
     {
-        static string RapidAPIKey = "6dc6c4cb1amshcdxxxxxxxx3e6p11ea8ejsn0a3dc8b876b7"; // Replace with your RapidAPI key
-        static string Token = "Basic Ym9sZGNoYXQxxxxxxxxxxx1QzkuKz9SLw=="; // Replace with your token
+        static string RapidAPIKey = "xxxxxxxxxx"; // Replace with your RapidAPI key
+        static string Token = "Basic xxxxxxxxxx"; // Replace with your token
 
         static async Task Main(string[] args)
         {
