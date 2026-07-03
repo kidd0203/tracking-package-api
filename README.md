@@ -75,7 +75,7 @@ class Program
 📦 Example Response (Full JSON Schema)
 
 The API always returns a consistent JSON structure, even when values are null or empty.
-```json
+
 {
     "TrackingNumber": "9200190312809701574398",
     "Delivered": false,
