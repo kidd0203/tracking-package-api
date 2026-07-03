@@ -31,7 +31,13 @@ Then open the Playground to test requests instantly in the browser.
 
 🔑 API Endpoint
 GET https://trackingpackage.p.rapidapi.com/TrackingPackage?trackingNumber={TRACKING_NUMBER}
+
 📌 C# Example (HttpClient)
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -44,17 +50,24 @@ class Program
 
         using var client = new HttpClient();
 
+        // RapidAPI headers
         client.DefaultRequestHeaders.Add("X-RapidAPI-Key", "YOUR_RAPIDAPI_KEY");
         client.DefaultRequestHeaders.Add("X-RapidAPI-Host", "trackingpackage.p.rapidapi.com");
 
+        // API endpoint
         var url = $"https://trackingpackage.p.rapidapi.com/TrackingPackage?trackingNumber={trackingNumber}";
 
+        // Send request
         var response = await client.GetAsync(url);
+        response.EnsureSuccessStatusCode();
+
         var content = await response.Content.ReadAsStringAsync();
 
+        Console.WriteLine("Tracking API Response:");
         Console.WriteLine(content);
     }
 }
+
 📦 Example Response (Full JSON Schema)
 
 The API always returns a consistent JSON structure, even when values are null or empty.
