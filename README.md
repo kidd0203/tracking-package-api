@@ -37,7 +37,6 @@ GET https://trackingpackage.p.rapidapi.com/TrackingPackage?trackingNumber={TRACK
 This example shows how to call the Multi-Carrier Tracking API using C# HttpClient.
 ```csharp
 
-📌 C# Example (HttpClient)
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
