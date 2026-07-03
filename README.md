@@ -71,7 +71,7 @@ class Program
         Console.WriteLine(content);
     }
 }
-
+```
 📦 Example Response (Full JSON Schema)
 
 The API always returns a consistent JSON structure, even when values are null or empty.
