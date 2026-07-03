@@ -32,6 +32,10 @@ Then open the Playground to test requests instantly in the browser.
 🔑 API Endpoint
 GET https://trackingpackage.p.rapidapi.com/TrackingPackage?trackingNumber={TRACKING_NUMBER}
 
+## 📌 C# Example – Track a Package
+
+This example shows how to call the Multi-Carrier Tracking API using C# HttpClient.
+
 📌 C# Example (HttpClient)
 using System;
 using System.Net.Http;
